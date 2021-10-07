@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<systems xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.lantanagroup.com/voc">
+  <system valueSetOid="2.16.840.1.113883.11.20.12.1" valueSetName="Personal And Legal Relationship Role Type">
+    <code value="ADOPTF" displayName="adoptive father" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="ADOPTM" displayName="adoptive mother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="ADOPTP" displayName="adoptive parent" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="AUNT" displayName="aunt" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="BRO" displayName="brother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="BROINLAW" displayName="brother-in-law" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="CHILD" displayName="child" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="CHLDADOPT" displayName="adopted child" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="CHLDFOST" displayName="foster child" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="CHLDINLAW" displayName="child-in-law" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="COUSN" displayName="cousin" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="DAU" displayName="natural daughter" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="DAUADOPT" displayName="adopted daughter" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="DAUC" displayName="daughter" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="DAUFOST" displayName="foster daughter" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="DAUINLAW" displayName="daughter in-law" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="DOMPART" displayName="domestic partner" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="DPOWATT" displayName="durable power of attorney" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="EXCEST" displayName="executor of estate" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="EXT" displayName="extended family member" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="FAMMEMB" displayName="family member" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="FMRSPS" displayName="former spouse" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="FRND" displayName="unrelated friend" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="FTH" displayName="father" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="FTHFOST" displayName="foster father" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="FTHINLAW" displayName="father-in-law" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="FTWIN" displayName="fraternal twin" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="FTWINBRO" displayName="fraternal twin brother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="FTWINSIS" displayName="fraternal twin sister" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="GESTM" displayName="gestational mother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="GGRFTH" displayName="great grandfather" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="GGRMTH" displayName="great grandmother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="GGRPRN" displayName="great grandparent" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="GRFTH" displayName="grandfather" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="GRMTH" displayName="grandmother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="GRNDCHILD" displayName="grandchild" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="GRNDDAU" displayName="granddaughter" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="GRNDSON" displayName="grandson" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="GRPRN" displayName="grandparent" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="GUADLTM" displayName="guardian ad lidem" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="GUARD" displayName="guardian" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="HBRO" displayName="half-brother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="HPOWATT" displayName="healthcare power of attorney" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="HSIB" displayName="half-sibling" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="HSIS" displayName="half-sister" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="HUSB" displayName="husband" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="INLAW" displayName="inlaw" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="ITWIN" displayName="identical twin" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="ITWINBRO" displayName="identical twin brother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="ITWINSIS" displayName="identical twin sister" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="MAUNT" displayName="maternal aunt" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="MCOUSN" displayName="maternal cousin" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="MGGRFTH" displayName="maternal great-grandfather" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="MGGRMTH" displayName="maternal great-grandmother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="MGGRPRN" displayName="maternal great-grandparent" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="MGRFTH" displayName="maternal grandfather" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="MGRMTH" displayName="maternal grandmother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="MGRPRN" displayName="maternal grandparent" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="MTH" displayName="mother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="MTHFOST" displayName="foster mother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="MTHINLAW" displayName="mother-in-law" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="MUNCLE" displayName="maternal uncle" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="NBOR" displayName="neighbor" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="NBRO" displayName="natural brother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="NCHILD" displayName="natural child" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="NEPHEW" displayName="nephew" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="NFTH" displayName="natural father" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="NFTHF" displayName="natural father of fetus" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="NIECE" displayName="niece" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="NIENEPH" displayName="niece/nephew" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="NMTH" displayName="natural mother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="NMTHF" displayName="natural mother of fetus" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="NPRN" displayName="natural parent" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="NSIB" displayName="natural sibling" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="NSIS" displayName="natural sister" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="ONESELF" displayName="self" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="PAUNT" displayName="paternal aunt" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="PCOUSN" displayName="paternal cousin" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="PGGRFTH" displayName="paternal great-grandfather" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="PGGRMTH" displayName="paternal great-grandmother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="PGGRPRN" displayName="paternal great-grandparent" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="PGRFTH" displayName="paternal grandfather" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="PGRMTH" displayName="paternal grandmother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="PGRPRN" displayName="paternal grandparent" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="POWATT" displayName="power of attorney" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="PRN" displayName="parent" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="PRNFOST" displayName="foster parent" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="PRNINLAW" displayName="parent in-law" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="PUNCLE" displayName="paternal uncle" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="ROOM" displayName="Roommate" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="SIB" displayName="sibling" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="SIBINLAW" displayName="sibling in-law" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="SIGOTHR" displayName="significant other" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="SIS" displayName="sister" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="SISINLAW" displayName="sister-in-law" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="SON" displayName="natural son" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="SONADOPT" displayName="adopted son" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="SONC" displayName="son" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="SONFOST" displayName="foster son" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="SONINLAW" displayName="son in-law" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="SPOWATT" displayName="special power of attorney" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="SPS" displayName="spouse" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="STPBRO" displayName="stepbrother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="STPCHLD" displayName="step child" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="STPDAU" displayName="stepdaughter" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="STPFTH" displayName="stepfather" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="STPMTH" displayName="stepmother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="STPPRN" displayName="step parent" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="STPSIB" displayName="step sibling" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="STPSIS" displayName="stepsister" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="STPSON" displayName="stepson" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="TWIN" displayName="twin" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="TWINBRO" displayName="twin brother" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="TWINSIS" displayName="twin sister" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="UNCLE" displayName="uncle" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+    <code value="WIFE" displayName="wife" codeSystemName="HL7RoleCode" codeSystem="2.16.840.1.113883.5.111" />
+  </system>
+</systems>
