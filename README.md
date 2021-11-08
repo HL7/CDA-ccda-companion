@@ -41,7 +41,7 @@ The `validation` directory contains validation artifacts. The schematron (.sch) 
 ### Errata files
 <dl>
 	<dt>List of errata identified to be applied</dt>
-	<dd><a href="https://github.com/HL7/cda-ccda-companion/blob/master/misc/2021OCT_C-CDACompanionGuideR2_Errata_list.xls"><code>misc/2021OCT_C-CDACompanionGuideR2_Errata_list.xls</code></a></dd>
+	<dd><a href="https://github.com/HL7/cda-ccda-companion/blob/master/misc/2021OCT_C-CDACompanionGuideR2_Errata_list.xlsx"><code>misc/2021OCT_C-CDACompanionGuideR2_Errata_list.xlsx</code></a></dd>
 	<dt>HL7 CTO Errata Letter</dt>
 	<dd><a href="https://github.com/HL7/cda-ccda-companion/blob/master/misc/CTO_Errata_Letter_C-CDACompanionGuideR2_2021OCT.pdf"><code>misc/CTO_Errata_Letter_C-CDACompanionGuideR2_2021OCT.pdf</code></a></dd>
 </dl>
