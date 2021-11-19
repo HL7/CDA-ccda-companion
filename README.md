@@ -6,8 +6,6 @@ This repository contains supplemental artifacts for the C-CDA Companion Guide.
 
 The `backups` directory contains Word files used to produce the final PDFs present in this release.
 
-The `misc` directory contains additional files relevant to this release, such as the errata files.
-
 The `validation` directory contains validation artifacts. The schematron (.sch) file AND voc.xml file are needed to successfully validate an instance of C-CDA XML. Implementers should always validate the C-CDA XML against the core CDA R2 XML schema before validating against schematron.
 
 ## Package Information
