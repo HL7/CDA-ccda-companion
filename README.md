@@ -2,7 +2,7 @@
 C-CDA Templates for Clinical Notes R2.1 Companion Guide
 
 ## Overview
-This repository contains supplemental artifacts for the C-CDA Companion Guide.
+This repository contains supplemental artifacts for the C-CDA Companion Guide. The Companion Guide itself is available via the [HL7 Standards Grid](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=492).
 
 The `backups` directory contains Word files used to produce the final PDFs present in this release.
 
