@@ -1,5 +1,5 @@
 # cda-ccda-companion
-C-CDA Templates for Clinical Notes R2.1 Companion Guide
+C-CDA Templates for Clinical Notes Companion Guide
 
 ## Overview
 This repository contains supplemental artifacts for the C-CDA Companion Guide. The Companion Guide itself is available via the [HL7 Standards Grid](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=492).
@@ -11,9 +11,9 @@ The `validation` directory contains validation artifacts. The schematron (.sch) 
 ## Package Information
 <dl>
 	<dt>Publication title</dt>
-	<dd>HL7 CDA® R2 IG: C-CDA Templates for Clinical Notes R2.1 Companion Guide, Release 2 - US Realm</dd>
+	<dd>HL7 CDA® R2 IG: C-CDA Templates for Clinical Notes Companion Guide, Release 3 - US Realm</dd>
 	<dt>Edition</dt>
-	<dd>Release 2 STU 1</dd>
+	<dd>Release 3 STU 1</dd>
 	<dt>Realm</dt>
 	<dd>US Realm</dd>
 	<dt>Release status</dt>
@@ -21,11 +21,11 @@ The `validation` directory contains validation artifacts. The schematron (.sch) 
 	<dt>JIRA Specification key</dt>
 	<dd>cda-ccda-companion-guide</dd>
 	<dt>Version</dt>
-	<dd>October 2021 Errata</dd>
+	<dd></dd>
 	<dt>Errata identifier</dt>
-	<dd>2021OCTwithErrata</dd>
+	<dd></dd>
 	<dt>Publication date</dt>
-	<dd>2021-10</dd>
+	<dd>2022-05</dd>
 	<dt>Prepared by</dt>
 	<dd>Structured Documents Work Group, the Federal Electronic Health Record Modernization (FEHRM) Program Office, and the US Realm Program Management Office</dd>
 </dl>
