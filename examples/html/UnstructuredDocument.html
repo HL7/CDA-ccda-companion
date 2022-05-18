@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do NOT edit this HTML directly: it was generated via an XSLT transformation from a CDA Release 2 or 3 XML document. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Personal Advance Care Document (July 31, 2014, 5:22PM -0600)</title>
+<!-- General CSS -->
+<style type="text/css" media="all">
+                    *{
+                        font-family: Verdana, Tahoma, sans-serif;
+                        font-size: 9pt;
+                    }
+                    body{
+                        padding: 2px;
+                        color: #003366;
+                        background-color: white;
+                        font-size: 9pt;
+                    }
+                    #documentheader,
+                    #documentbody,
+                    #documentfooter{
+                        width: 100%;
+                    }
+                    #documentheader{
+                        border-bottom: 1px solid grey;
+                        margin-bottom: 1em;
+                    }
+                    #documentfooter{
+                        border-top: 1px solid grey;
+                        margin-top: 1em;
+                    }
+                    a{
+                        color: #003366;
+                        background-color: white;
+                    }
+                    h1{
+                        font-size: 12pt;
+                        font-weight: bold;
+                    }
+                    h1.title{
+                        text-align: center;
+                    }
+                    h2{
+                        font-size: 11pt;
+                        font-weight: bold;
+                    }
+                    h3{
+                        font-size: 10pt;
+                        font-weight: bold;
+                    }
+                    h4{
+                        font-size: 9pt;
+                        font-weight: bold;
+                    }
+                    h5{
+                        font-size: 9pt;
+                        font-weight: bold;
+                    }
+                    h6{
+                        font-size: 9pt;
+                        font-weight: bold;
+                    }
+                    hr{
+                        width: 100%;
+                    }
+                    span {
+                        font-size: 9pt; /* IE8 hack: doesn't understand inheritance */
+                        display: inline; /* IE8 hack: would go to next line otherwise */
+                    }
+                    table{
+                        line-height: 10pt;
+                        width: 100%;
+                    }
+                    thead tr, th{
+                        background-color: LightGrey;
+                    }
+                    tbody tr{
+                        background-color: #f2f2f2;
+                    }
+                    td{
+                        font-size: 9pt; /* IE8 hack: doesn't understand inheritance */
+                        padding: 0.1cm 0.2cm;
+                        vertical-align: top;
+                    }
+                    .table_simple{
+                        width: auto;
+                        color: inherit;
+                        background-color: inherit;
+                    }
+                    .table_simple td{
+                        padding: 0;
+                    }
+                    .table_simple td.td_label{
+                        font-size: 9pt; /* IE8 hack: doesn't understand inheritance */
+                        font-weight: inherit;
+                        font-style: italic;
+                        padding-right: 0.2cm;
+                    }
+                    .has_provenance td,
+                    .has_provenance:not(:empty):not(table),
+                    .has_provenance:focus:after {
+                        text-decoration: underline grey dashed;
+                        text-decoration-thickness: 0.01em;
+                    }
+                    .has_provenance:focus:after {
+                            content: attr(title);
+                            white-space: break-spaces;
+                            padding: 2px;
+                            display: block;
+                            position: relative;
+                            text-align: left;
+                            background-color: #fef4c5;
+                            border: 1px solid #d4b943;
+                            border-radius: 2px;
+                            font-weight: normal;
+                            color: black;
+                            font-size: 10pt;
+                            line-height: 12pt;
+                            width: fit-content;
+                    }
+                    tr.has_provenance:focus:after {
+                           width: max-content;
+                    }
+                    
+                    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                        .has_provenance td,
+                        .has_provenance:not(:empty):not(table),
+                        .has_provenance:focus:after {
+                            text-decoration: underline;
+                        }
+                        .has_provenance:focus:after {
+                            white-space: pre;
+                            display: table;
+                            width: auto;
+                        }
+                    }
+                    .header_table{
+                        border: 1pt solid #00008b;
+                    }
+                    .narr_table{
+                        width: 100%;
+                        margin: 0.3em 0;
+                    }
+                    .narr_tr{
+                        //background-color: #ffffcc;
+                    }
+                    .narr_th{
+                        background-color: LightGrey;
+                        font-size: 9pt; /* IE8 hack: doesn't understand inheritance */
+                    }
+                    .narr_footnote{
+                        font-size: 8pt;
+                        font-style: italic;
+                    }
+                    .td_label{
+                        font-size: 9pt; /* IE8 hack: doesn't understand inheritance */
+                        font-weight: bold;
+                        background-color: LightGrey;
+                    }
+                    .td_label_width{
+                        width: 20%;
+                    }
+                    .span_label{
+                        font-size: 9pt; /* IE8 hack: doesn't understand inheritance */
+                        font-weight: bold;
+                    }
+                    .span_value{
+                        font-size: 9pt; /* IE8 hack: doesn't understand inheritance */
+                        font-weight: normal;
+                    }
+                    .revision_insert{
+                        text-decoration: underline overline;
+                    }
+                    .revision_insert_final{
+                    }
+                    .revision_delete{
+                        text-decoration: line-through;
+                    }
+                    .revision_delete_final{
+                        display: none;
+                    }
+                    .span_button {
+                        display: table-cell;
+                        cursor: pointer;
+                        border: 2pt inset #585858;
+                        border-radius: 15px;
+                        -moz-border-radius: 15px;
+                        padding: 0.1cm 0.2cm;
+                        background-color: #f2f2f2;
+                        font-weight: bold;
+                        vertical-align: baseline;
+                        width: 150px;
+                    }
+                    div.separator {
+                        height: 1em;
+                    }
+                    div.caption {
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                </style>
+<!-- Stylecode CSS -->
+<style type="text/css" media="all">
+                    .Bold{
+                        font-weight: bold;
+                    }
+                    .Italics{
+                        font-style: italic;
+                    }
+                    .Underline{
+                        text-decoration: underline;
+                    }
+                    .Emphasis{
+                        font-weight: bold;
+                        font-style: italic;
+                    }
+                    .Lrule{
+                        border-left-width: 2px;
+                        border-left-style: solid;
+                    }
+                    .Rrule{
+                        border-right-width: 2px;
+                        border-right-style: solid;
+                    }
+                    .Toprule{
+                        border-top-width: 2px;
+                        border-top-style: solid;
+                    }
+                    .Botrule{
+                        border-bottom-width: 2px;
+                        border-bottom-style: solid;
+                    }
+                    .Arabic{
+                        list-style: arabic;
+                    }
+                    .LittleRoman{
+                        list-style: lower-roman;
+                    }
+                    .BigRoman{
+                        list-style: upper-roman;
+                    }
+                    .LittleAlpha{
+                        list-style: lower-alpha;
+                    }
+                    .BigAlpha{
+                        list-style: upper-alpha
+                    }
+                    .Disc{
+                        list-style: disc;
+                    }
+                    .Circle{
+                        list-style: circle;
+                    }
+                    .Square{
+                        list-style: square;
+                    }</style>
+<!-- Section Button Toggle CSS -->
+<style type="text/css" media="screen">
+                    div.button.expandCollapse {
+                        float: left;
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+                </style>
+<!-- Revision Toggle CSS -->
+<style type="text/css" media="print">
+                    button, 
+                    div.button,
+                    #buttontable {
+                        display: none;
+                    }
+                    div.section-content {
+                        display: block !important;
+                    }
+                    .print_visible {
+                        display: block;
+                        float: none;
+                        margin-right: 0;
+                    }
+                </style>
+<!-- Table of Contents CSS -->
+<style type="text/css" media="screen">
+                    #nav, #nav ul {
+                        padding: 0;
+                        margin: 0;
+                        list-style: none;
+                    }
+                    
+                    #nav li {
+                        float: left;
+                        width: 300px;
+                    }
+                    #nav ul {
+                        position: absolute;
+                        width: 300px;
+                        left: -1000px;
+                    }
+                    #nav li ul li ul {
+                        display: none;
+                    }
+                    
+                    #nav li ul li:hover > ul {
+                        display: block;
+                        position: absolute;
+                        left: 50px !important;
+                    }
+                    #nav li ul li:hover > ul > li > a {
+                        border: 1px solid #585858;
+                    }
+                    
+                    #nav li:hover ul, #nav li.ie_does_hover ul {
+                        left: auto;
+                        background-position: 0 0;
+                    }
+                    
+                    #nav * a {
+                        display: block;
+                        padding: 2px 8px;
+                        text-decoration: none;
+                        font-weight: bold;
+                        font-size: 11px;
+                    }
+                    
+                    #nav ul * a {
+                        font-weight: bold;
+                        color: #585858;
+                        background-color: #f2f2f2;
+                        cursor: pointer;
+                    }
+                    
+                    #nav ul ul a:link, #nav ul ul a:visited {
+                        font-weight: normal;
+                        color: #585858;
+                        background-color: #f2f2f2;
+                        cursor: pointer;
+                    }
+                    
+                    #nav * li a:hover, #nav * li a:active,
+                    #nav * li * li a:hover, #nav * li * li a:active {
+                        /*font-weight: normal;*/
+                        color: white;
+                        background-color: #585858;
+                        cursor: pointer;
+                    }
+                    
+                    #nav * li {
+                        border-left: 2px solid white;
+                    }
+                    
+                    #nav * ul li {
+                        border-top: 2px solid white;
+                        border-left: 0;
+                    }
+                    
+                    /* IE only hack */
+                    * html ul li, * html ul ul li{
+                        border-bottom: 2px solid white;
+                    }
+                    
+                    * html ul ul li{
+                        border-top: 0;
+                    }
+                    /* End IE only hack */
+                </style>
+<!-- Javascript for Revisions switch -->
+<script type="text/javascript">var gStringCollapse = "Collapse"; var gStringExpand = "Expand";
+                        function expandAllSections() {
+                            var toggleButtons = document.getElementsByClassName("expandCollapse");
+                            if (toggleButtons != null) {
+                                var i = 0;
+                                while (i != toggleButtons.length) {
+                                    expandSection(toggleButtons[i]);
+                                    i++;
+                                }
+                            }
+                            toggle('sectionsToggleExpand');
+                            toggle('sectionsToggleCollapse');
+                        }
+                        function expandSection(sectionTitleButton) {
+                            sectionTitleButton.title = gStringCollapse;
+                            sectionTitleButton.innerText = '▼';
+                            sectionTitleButton.onclick = function (){collapseSection(this);};
+                            var sectionContent = sectionTitleButton.parentElement.parentElement.children[1]
+                            if (sectionContent != null) {
+                                sectionContent.style.display = '';
+                            }
+                        }
+                        function collapseAllSections() {
+                            var toggleButtons = document.getElementsByClassName("expandCollapse");
+                            if (toggleButtons != null) {
+                                var i = 0;
+                                while (i != toggleButtons.length) {
+                                    collapseSection(toggleButtons[i]);
+                                    i++;
+                                }
+                            }
+                            toggle('sectionsToggleExpand');
+                            toggle('sectionsToggleCollapse');
+                        }
+                        function collapseSection(sectionTitleButton) {
+                            sectionTitleButton.title = gStringExpand;
+                            sectionTitleButton.innerText = '▶';
+                            sectionTitleButton.onclick = function (){expandSection(this);};
+                            var sectionContent = sectionTitleButton.parentElement.parentElement.children[1]
+                            if (sectionContent != null) {
+                                sectionContent.style.display = 'none';
+                            }
+                        }
+                        function showReviewMarks() {
+                            var allHTMLTags=document.getElementsByTagName("*");
+                            for (i in allHTMLTags) {
+                                //Get all tags with the specified class name.
+                                if (allHTMLTags[i].className=='revision_insert_final') {
+                                    allHTMLTags[i].className = 'revision_insert';
+                                }
+                                if (allHTMLTags[i].className=='revision_delete_final') {
+                                    allHTMLTags[i].className = 'revision_delete';
+                                }
+                            }
+                            toggle('revisionToggleOn');
+                            toggle('revisionToggleOff');
+                        }
+                        function hideReviewMarks() {
+                            var allHTMLTags=document.getElementsByTagName("*");
+                            for (i in allHTMLTags) {
+                                //Get all tags with the specified class name.
+                                if (allHTMLTags[i].className=='revision_insert') {
+                                    allHTMLTags[i].className = 'revision_insert_final';
+                                }
+                                if (allHTMLTags[i].className=='revision_delete') {
+                                    allHTMLTags[i].className = 'revision_delete_final';
+                                }
+                            }
+                            toggle('revisionToggleOn');
+                            toggle('revisionToggleOff');
+                        }
+                        function toggle(obj) {
+                            var el = document.getElementById(obj);
+                            el.style.display = (el.style.display != 'none' ? 'none' : '' );
+                        }
+                        </script>
+<!-- Javascript for Table of Contents menu -->
+<script type="text/javascript">
+                        sfHover = function() {
+                            var sfEls = document.getElementById("nav").getElementsByTagName("li");
+                            for (i in sfEls) {
+                                sfEls[i].onmouseover=function() {
+                                    this.className+=" ie_does_hover";
+                                }
+                                sfEls[i].onmouseout=function() {
+                                    this.className=this.className.replace(new RegExp(" ie_does_hover"), "");
+                                }
+                            }
+                        }
+                        if (window.attachEvent) window.attachEvent("onload", sfHover);
+                    </script>
+</head>
+<body>
+<div id="documentheader">
+<a id="_toc"> </a>
+<h1 class="title">Personal Advance Care Document (July 31, 2014, 5:22PM -0600)</h1>
+<table class="header_table">
+<tbody>
+<tr>
+<td class="td_label">Patient</td>
+<td>
+<span class="span_value">Legal: Roger  Rienman  MCBEE</span>
+<span style="float: right; margin-left: 1em;">
+<span>
+<span class="span_label">Date of Birth: </span>
+<span class="span_value">September  11, 1930<span title="At document creation time"> (83yr)</span>
+</span>
+</span>
+<span class="span_label">Gender: </span>
+<span class="span_value">Male</span>
+</span>
+<span style="float: right;" class="print_visible">
+<span class="span_label">Patient-ID: </span>
+<span class="span_value">
+<span>20130607100800-McBeeID (2.16.840.1.113883.4.823.1)</span>, <span>Roger.McBee@direct.max.md (2.16.840.1.113883.9.9.9)</span>
+</span>
+</span>
+</td>
+</tr>
+<tr>
+<td class="td_label">Author</td>
+<td>
+<span class="span_value">Legal: Roger  Rienman  MCBEE</span>, <span class="span_label">Authored On: </span>
+<span class="span_value">June  7, 2013, 00AM</span>
+</td>
+</tr>
+<tr>
+<td class="td_label">Author</td>
+<td>
+<span class="span_value">MyDirectives.com v2.0</span>, <span class="span_label">Organization: </span>
+<span class="span_value">ADVault, Inc.</span>, <span class="span_label">Authored On: </span>
+<span class="span_value">August  15, 2012, 11AM -0800</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="documentbody">
+<!--[if lte IE 9]>
+                    WARNING: This browser does not support (sandboxed) iframes with inline pdf which makes rendering here potentially unsafe and/or impossible. Please try a different browser.
+                <![endif]-->
+<!--[if gt IE 9]>--> If the contents are not displayed here, it may be offered as a download.<div style="font-style: italic;">WARNING: Due to the security setting of this rendering, it is not possible to show the pdf.</div>
+<!--<![endif]-->
+</div>
+<div id="documentfooter">
+<table class="header_table">
+<tbody>
+<tr>
+<td class="td_label td_label_width">Document</td>
+<td style="width: 30%;">
+<table class="table_simple">
+<tbody>
+<tr>
+<td class="td_label">ID</td>
+<td>
+<span>20130607100315-CCDA-CCD (2.16.840.1.113883.3.3208.101.1)</span>
+</td>
+</tr>
+<tr>
+<td class="td_label">Version</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="td_label">Set‑ID</td>
+<td>
+<span>123 (2.16.840.1.113883.4.823.1.12345)</span>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="td_label td_label_width">Created On</td>
+<td>July  31, 2014, 5:22PM -0600</td>
+</tr>
+</tbody>
+</table>
+<table class="header_table">
+<tbody>
+<tr>
+<td class="td_label td_label_width">Custodian</td>
+<td style="width: 30%;">MyDirectives.com</td>
+<td class="td_label td_label_width">Contact Details</td>
+<td>Workplace: P.O. Box 832624<br />Richardson, TX 75083<br />US<br />Tel Workplace: +1(202)776-7700</td>
+</tr>
+</tbody>
+</table>
+<div class="separator"> </div>
+<table class="header_table">
+<tbody>
+<tr>
+<td class="td_label td_label_width">Patient</td>
+<td style="width: 30%;">Legal: Roger  Rienman  MCBEE</td>
+<td class="td_label td_label_width">Contact Details</td>
+<td style="width: 30%;">Home Primary: 1111 StreetName St.<br />Silver Spring, IL 20901<br />US<br />Tel Home Primary: +1(301)111-1111, Mail: roger.r.mcbee@fakegmail.com</td>
+</tr>
+<tr>
+<td class="td_label td_label_width">Date of Birth</td>
+<td style="width: 30%;">September  11, 1930 (83yr)</td>
+<td class="td_label td_label_width">Gender</td>
+<td>Male</td>
+</tr>
+<tr>
+<td class="td_label td_label_width">Race</td>
+<td style="width: 30%;">White</td>
+<td class="td_label td_label_width">Ethnicity</td>
+<td>Not Hispanic or Latino</td>
+</tr>
+<tr>
+<td class="td_label td_label_width">Patient-IDs</td>
+<td>
+<span>20130607100800-McBeeID (2.16.840.1.113883.4.823.1)</span>
+<br />
+<span>Roger.McBee@direct.max.md (2.16.840.1.113883.9.9.9)</span>
+</td>
+<td class="td_label td_label_width">Language Communication</td>
+<td colspan="3">
+<div>eng, Expressed spoken, Excellent</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="separator"> </div>
+<div class="separator"> </div>
+<table class="header_table">
+<tbody>
+<tr>
+<td class="td_label td_label_width">Author</td>
+<td style="width: 30%;">Legal: Roger  Rienman  MCBEE - Code: self</td>
+<td class="td_label td_label_width">Contact Details</td>
+<td>Home Primary: 1111 StreetName St.<br />Silver Spring, IL 20901<br />US<br />Tel Home Primary: +1(301)111-1111</td>
+</tr>
+</tbody>
+</table>
+<table class="header_table">
+<tbody>
+<tr>
+<td class="td_label td_label_width" rowspan="2">Author</td>
+<td style="width: 30%;" rowspan="2">MyDirectives.com v2.0, Organization: ADVault, Inc.</td>
+<td class="td_label td_label_width">Contact Details</td>
+<td>Workplace: P.O. Box 832624<br />Richardson, TX 75083<br />US<br />Tel Workplace: +1(202)776-7700</td>
+</tr>
+<tr>
+<td class="td_label td_label_width">Contact Details (Organization)</td>
+<td>Workplace: P.O. Box 832624<br />Richardson, TX 75083<br />US<br />Tel Workplace: +1(202)776-7700</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
