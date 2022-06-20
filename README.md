@@ -6,7 +6,7 @@ This repository contains supplemental artifacts for the C-CDA Companion Guide. T
 
 The `examples` directory contains XML and HTML representing fully-formed C-CDA documents demonstrating the guidance in this IG.
 
-The `input` directory contains Word files used to produce the final PDFs present in this release.
+The `input` directory contains Word files used to produce the final PDFs present in this release. A [redline](https://github.com/HL7/CDA-ccda-companion/tree/master/input/Redline) version with all changes is included.
 
 The `validation` directory contains validation artifacts. The schematron (.sch) file AND voc.xml file are needed to successfully validate an instance of C-CDA XML. Implementers should always validate the C-CDA XML against the core CDA R2 XML schema before validating against schematron.
 
