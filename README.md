@@ -21,7 +21,7 @@ The `validation` directory contains validation artifacts. The schematron (.sch) 
 	<dt>Release status</dt>
 	<dd>Standard for Trial Use (STU)</dd>
 	<dt>JIRA Specification key</dt>
-	<dd>cda-ccda-companion-guide</dd>
+	<dd>ccda-two-one-companion</dd>
 	<dt>Version</dt>
 	<dd></dd>
 	<dt>Errata identifier</dt>
