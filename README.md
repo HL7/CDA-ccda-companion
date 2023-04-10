@@ -13,9 +13,9 @@ The `validation` directory contains validation artifacts. The schematron (.sch) 
 ## Package Information
 <dl>
 	<dt>Publication title</dt>
-	<dd>HL7 CDA® R2 IG: C-CDA Templates for Clinical Notes Companion Guide, Release 3 - US Realm</dd>
+	<dd>HL7 CDA® R2 IG: C-CDA Templates for Clinical Notes Companion Guide, Release 4 - US Realm</dd>
 	<dt>Edition</dt>
-	<dd>Release 3 STU 1</dd>
+	<dd>Release 4 STU 1</dd>
 	<dt>Realm</dt>
 	<dd>US Realm</dd>
 	<dt>Release status</dt>
