@@ -13,15 +13,15 @@ The `validation` directory contains validation artifacts. The schematron (.sch) 
 ## Package Information
 <dl>
 	<dt>Publication title</dt>
-	<dd>HL7 CDA® R2 IG: C-CDA Templates for Clinical Notes Companion Guide, Release 3 - US Realm</dd>
+	<dd>HL7 CDA® R2 IG: C-CDA Templates for Clinical Notes Companion Guide, Edition 4 - US Realm</dd>
 	<dt>Edition</dt>
-	<dd>Release 3 STU 1</dd>
+	<dd>Edition 4 STU 1</dd>
 	<dt>Realm</dt>
 	<dd>US Realm</dd>
 	<dt>Release status</dt>
 	<dd>Standard for Trial Use (STU)</dd>
 	<dt>JIRA Specification key</dt>
-	<dd>cda-ccda-companion-guide</dd>
+	<dd>ccda-two-one-companion</dd>
 	<dt>Version</dt>
 	<dd></dd>
 	<dt>Errata identifier</dt>

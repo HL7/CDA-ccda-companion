@@ -4,24 +4,22 @@ Publication title:                               HL7 CDA® R2 IG: C-CDA Template
 Edition:                                         Release 4 STU 1
 Realm:                                           US Realm
 Release status:                                  Standard for Trial Use (STU)
-JIRA Specification key:                          cda-ccda-companion-guide
+JIRA Specification key:                          ccda-two-one-companion
 Version:                                         
 Errata identifier:                               
 Publication date:                                May 1, 2023
-Prepared by:                                     Structured Documents Work Group, the Federal Electronic Health Record Modernization (FEHRM) Program Office (@brett is FEHRM suppport applicable on this version?), and the US Realm Program Management Office
+Prepared by:                                     Structured Documents Work Group, the Federal Electronic Health Record Modernization (FEHRM) Program Office, and the US Realm Program Management Office
 
 
 Contents of the package:
 ========================
-This file:                                       readme.txt 
+This file:                                       _readme.txt 
 
 --- STU ---
-CDA R2.1 Companion Guidance:                     CDAR2_IG_CCDA_COMPANION_R4_STU_2022MAY.pdf
-Additional C-CDA Templates:                      CDAR2_IG_CCDA_COMPANION_R4_STU_2022MAY_AppxA.pdf
-UDI Organizer Template:                          CDAR2_IG_CCDA_COMPANION_R4_STU_2022MAY_AppxB.pdf
+CDA R2.1 Companion Guidance:                     CDAR2_IG_CCDA_COMPANION_R4_STU_2023May.pdf
+Additional C-CDA Templates:                      CDAR2_IG_CCDA_COMPANION_R4_STU_2023May_AppxA.pdf
+UDI Organizer Template:                          CDAR2_IG_CCDA_COMPANION_R4_STU_2023May_AppxB.pdf
 
---- Sample files ---
-Sample file is stored at: https://github.com/HL7/cda-ccda-companion/
 
 --- Transform/Stylesheet files ---
 https://hl7.org/permalink/?CDAStyleSheet
@@ -29,9 +27,15 @@ https://hl7.org/permalink/?CDAStyleSheet
 ---- Schema files ----
 https://hl7.org/permalink/?CDAR2.0schema
 
+--- Sample files ---
+Sample file is stored at: https://github.com/HL7/cda-ccda-companion/tree/master/examples
+
 ---- Schematron Validation files ----
-Schematron files are stored at: https://github.com/HL7/cda-ccda-companion/
+Schematron files are stored at: https://github.com/HL7/CDA-ccda-companion/tree/master/validation
  Specific For Companion Guide R4:C-CDA 2.1 Companion Guide V4.sch
 
 ----Redline copies with Trifolia Generated Tracked Changes and Jira numbers in comments:
-   ??
+   https://github.com/HL7/CDA-ccda-companion/tree/master/input/Redline
+
+---- GitHub Release ----
+All files in the cda-ccda-companion github repo specific to this release have a permanent home here: https://github.com/HL7/CDA-ccda-companion/releases/tag/edition-4
