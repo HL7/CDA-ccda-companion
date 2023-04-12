@@ -27,7 +27,7 @@ The `validation` directory contains validation artifacts. The schematron (.sch) 
 	<dt>Errata identifier</dt>
 	<dd></dd>
 	<dt>Publication date</dt>
-	<dd>2022-05</dd>
+	<dd>2023-05</dd>
 	<dt>Prepared by</dt>
 	<dd>Structured Documents Work Group, the Federal Electronic Health Record Modernization (FEHRM) Program Office, and the US Realm Program Management Office</dd>
 </dl>
