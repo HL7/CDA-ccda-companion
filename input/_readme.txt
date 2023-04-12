@@ -1,14 +1,14 @@
 This package supports QA of the C-CDA companion guide. HL7 will post this copy to GitHub to maintain record of changes. A future pre-publication will be posted with all changes accepted.
 
-Publication title:                               HL7 CDA® R2 IG: C-CDA Templates for Clinical Notes STU Companion Guide, Edition 4 - US Realm
-Edition:                                         Edition 4 STU 1
+Publication title:                               HL7 CDA® R2 IG: C-CDA Templates for Clinical Notes STU Companion Guide, Release 4 - US Realm
+Edition:                                         Release 4 STU 1
 Realm:                                           US Realm
 Release status:                                  Standard for Trial Use (STU)
 JIRA Specification key:                          ccda-two-one-companion
 Version:                                         
 Errata identifier:                               
 Publication date:                                May 1, 2023
-Prepared by:                                     Structured Documents Work Group, the Federal Electronic Health Record Modernization (FEHRM) Program Office (@brett is FEHRM suppport applicable on this version?), and the US Realm Program Management Office
+Prepared by:                                     Structured Documents Work Group, the Federal Electronic Health Record Modernization (FEHRM) Program Office, and the US Realm Program Management Office
 
 
 Contents of the package:
@@ -16,9 +16,9 @@ Contents of the package:
 This file:                                       _readme.txt 
 
 --- STU ---
-CDA R2.1 Companion Guidance:                     CDAR2_IG_CCDA_COMPANION_R4_STU_2023JAN.pdf
-Additional C-CDA Templates:                      CDAR2_IG_CCDA_COMPANION_R4_STU_2023JAN_AppxA.pdf
-UDI Organizer Template:                          CDAR2_IG_CCDA_COMPANION_R4_STU_2023JAN_AppxB.pdf
+CDA R2.1 Companion Guidance:                     CDAR2_IG_CCDA_COMPANION_R4_STU_2023May.pdf
+Additional C-CDA Templates:                      CDAR2_IG_CCDA_COMPANION_R4_STU_2023May_AppxA.pdf
+UDI Organizer Template:                          CDAR2_IG_CCDA_COMPANION_R4_STU_2023May_AppxB.pdf
 
 
 --- Transform/Stylesheet files ---
