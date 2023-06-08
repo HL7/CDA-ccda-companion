@@ -17,8 +17,8 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
 
 <?xml-model href="C-CDA%202.1%20Companion%20Guide%20V4.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="urn:hl7-org:v3 CDA-core-2.0-master/CDA-core-2.0-master/schema/extensions/SDTC/infrastructure/cda/CDA_SDTC.xsd"
-    xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:voc="urn:hl7-org:v3/voc">
+ xsi:schemaLocation="urn:hl7-org:v3 CDA-core-2.0-master/CDA-core-2.0-master/schema/extensions/SDTC/infrastructure/cda/CDA_SDTC.xsd"
+ xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:voc="urn:hl7-org:v3/voc">
     <realmCode code="US"/>
     <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
     <!-- CCD template ID-->
@@ -952,6 +952,11 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                                     <td>May 1, 1975</td>
                                 </tr>
                                 <tr>
+                                    <td>Sex</td>
+                                    <td>Female</td>
+                                    <td>May 1, 1975</td>
+                                </tr>
+                                <tr>
                                     <td>Tribal Affiliation</td>
                                     <td>Village of Afognak</td>
                                     <td>May 1 ,2023</td>
@@ -1086,7 +1091,7 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                             </author>
                         </observation>
                     </entry>
-                    <!-- Birth Sex: This template may be used for the USCDI V3 Data Element "sex".  -->
+                    <!-- Birth Sex  -->
                     <entry typeCode="DRIV">
                         <observation classCode="OBS" moodCode="EVN">
                             <templateId root="2.16.840.1.113883.10.20.22.4.200"
@@ -1102,6 +1107,55 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                                     <reference value="#BSex_value"/>
                                 </originalText>
                             </value>
+                        </observation>
+                    </entry>
+                    <!-- Sex USCDI V3  -->
+                    <entry typeCode="DRIV">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.507" extension="2023-07-01"/>
+                            <id root="5501b49a-32ea-4c78-9c31-3dbe782871z7"/>
+                            <code code="46098-0" codeSystem="2.16.840.1.113883.6.1"
+                                codeSystemName="LOINC" displayName="Sex"/>
+                            <statusCode code="completed"/>
+                            <!-- The effectiveTime reflects the point in time when the current sex instance was noted. -->
+                            <effectiveTime value="20230501"/>
+                            <value xsi:type="CD" code="248152002"
+                                displayName="Female"
+                                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                            <!-- MAY contain a Comment Activity Template. The Comment Activity can record additional information about the Sex Observation. 
+                                For example, it could record how a user obtained the patient's sex (e.g. Drivers license, Passport, Health insurance card)  -->
+                            <entryRelationship typeCode="SPRT">
+                                <act classCode="ACT" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.64"/>
+                                    <id root="5501b49a-32ea-4c78-9c31-3dbe782871m7"/>
+                                    <code code="48767-8" displayName="Annotation Comment" 
+                                        codeSystemName="LOINC" 
+                                        codeSystem="2.16.840.1.113883.6.1"/>
+                                    <text>"Female" was noted on the patient's driver's license and insurance card.
+                                        <reference value="#PntrtoSectionText"/>
+                                    </text>
+                                    <author>
+                                        <time value="20050329224411+0500"/>
+                                        <assignedAuthor>
+                                            <id extension="KP00017" root="2.16.840.1.113883.19.5"/>
+                                            <addr>
+                                                <streetAddressLine>21 North Ave.</streetAddressLine>
+                                                <city>Burlington</city>
+                                                <state>MA</state>
+                                                <postalCode>02368</postalCode>
+                                                <country>US</country>
+                                            </addr>
+                                            <telecom use="WP" value="tel:(555)555-1003"/>
+                                            <assignedPerson>
+                                                <name>
+                                                    <given>Henry</given>
+                                                    <family>Seven</family>
+                                                </name>
+                                            </assignedPerson>
+                                        </assignedAuthor>
+                                    </author>
+                                </act>
+                            </entryRelationship>
                         </observation>
                     </entry>
                     <!-- ** Gender Identity Observation ** -->
