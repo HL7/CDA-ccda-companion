@@ -17,8 +17,8 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
 
 <?xml-model href="C-CDA%202.1%20Companion%20Guide%20V4.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="urn:hl7-org:v3 CDA-core-2.0-master/CDA-core-2.0-master/schema/extensions/SDTC/infrastructure/cda/CDA_SDTC.xsd"
-    xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:voc="urn:hl7-org:v3/voc">
+ xsi:schemaLocation="urn:hl7-org:v3 ../CDA-core-2.0-master/CDA-core-2.0-master/schema/extensions/SDTC/infrastructure/cda/CDA_SDTC.xsd"
+ xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:voc="urn:hl7-org:v3/voc">
     <realmCode code="US"/>
     <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
     <!-- CCD template ID-->
@@ -948,7 +948,12 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                                 </tr>
                                 <tr>
                                     <td>Birth Sex</td>
-                                    <td>Female</td>
+                                    <td><content ID="BSex_value">Female</content></td>
+                                    <td>May 1, 1975</td>
+                                </tr>
+                                <tr>
+                                    <td>Sex</td>
+                                    <td><content ID="Sex_value">Female</content></td>
                                     <td>May 1, 1975</td>
                                 </tr>
                                 <tr>
@@ -1086,7 +1091,7 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                             </author>
                         </observation>
                     </entry>
-                    <!-- Birth Sex: This template may be used for the USCDI V3 Data Element "sex".  -->
+                    <!-- Birth Sex  -->
                     <entry typeCode="DRIV">
                         <observation classCode="OBS" moodCode="EVN">
                             <templateId root="2.16.840.1.113883.10.20.22.4.200"
@@ -1102,6 +1107,55 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                                     <reference value="#BSex_value"/>
                                 </originalText>
                             </value>
+                        </observation>
+                    </entry>
+                    <!-- Sex USCDI V3  -->
+                    <entry typeCode="DRIV">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.507" extension="2023-07-01"/>
+                            <id root="5501b49a-32ea-4c78-9c31-3dbe782871z7"/>
+                            <code code="46098-0" codeSystem="2.16.840.1.113883.6.1"
+                                codeSystemName="LOINC" displayName="Sex"/>
+                            <statusCode code="completed"/>
+                            <!-- The effectiveTime reflects the point in time when the current sex instance was noted. -->
+                            <effectiveTime value="20230501"/>
+                            <value xsi:type="CD" code="248152002"
+                                displayName="Female"
+                                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                            <!-- MAY contain a Comment Activity Template. The Comment Activity can record additional information about the Sex Observation. 
+                                For example, it could record how a user obtained the patient's sex (e.g. Drivers license, Passport, Health insurance card)  -->
+                            <entryRelationship typeCode="SPRT">
+                                <act classCode="ACT" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.64"/>
+                                    <id root="5501b49a-32ea-4c78-9c31-3dbe782871m7"/>
+                                    <code code="48767-8" displayName="Annotation Comment" 
+                                        codeSystemName="LOINC" 
+                                        codeSystem="2.16.840.1.113883.6.1"/>
+                                    <text>"Female" was noted on the patient's driver's license and insurance card.
+                                        <reference value="#Sex_value"/>
+                                    </text>
+                                    <author>
+                                        <time value="20050329224411+0500"/>
+                                        <assignedAuthor>
+                                            <id extension="KP00017" root="2.16.840.1.113883.19.5"/>
+                                            <addr>
+                                                <streetAddressLine>21 North Ave.</streetAddressLine>
+                                                <city>Burlington</city>
+                                                <state>MA</state>
+                                                <postalCode>02368</postalCode>
+                                                <country>US</country>
+                                            </addr>
+                                            <telecom use="WP" value="tel:(555)555-1003"/>
+                                            <assignedPerson>
+                                                <name>
+                                                    <given>Henry</given>
+                                                    <family>Seven</family>
+                                                </name>
+                                            </assignedPerson>
+                                        </assignedAuthor>
+                                    </author>
+                                </act>
+                            </entryRelationship>
                         </observation>
                     </entry>
                     <!-- ** Gender Identity Observation ** -->
@@ -1520,11 +1574,11 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td ID="substance1">Penicillin</td>
+                                    <td ID="allergytype1">Penicillin</td>
                                     <td ID="reaction1">Nausea</td>
                                 </tr>
                                 <tr>
-                                    <td ID="substance2">Codeine</td>
+                                    <td ID="allergytype2">Codeine</td>
                                     <td ID="reaction2">Wheezing</td>
                                 </tr>
                             </tbody>
@@ -1612,9 +1666,6 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                                             <code code="SEV" displayName="Severity Observation"
                                                 codeSystem="2.16.840.1.113883.5.4"
                                                 codeSystemName="ActCode"/>
-                                            <text>
-                                                <reference value="#allergyseverity1"/>
-                                            </text>
                                             <statusCode code="completed"/>
                                             <value xsi:type="CD" code="371924009"
                                                 displayName="Moderate to severe"
@@ -1769,9 +1820,6 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                                                   displayName="Severity Observation"
                                                   codeSystem="2.16.840.1.113883.5.4"
                                                   codeSystemName="ActCode"/>
-                                                  <text>
-                                                  <reference value="#reactionseverity2"/>
-                                                  </text>
                                                   <statusCode code="completed"/>
                                                   <value xsi:type="CD" code="6736007"
                                                   displayName="Moderate"
@@ -1792,9 +1840,6 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                                             <code code="SEV" displayName="Severity Observation"
                                                 codeSystem="2.16.840.1.113883.5.4"
                                                 codeSystemName="ActCode"/>
-                                            <text>
-                                                <reference value="#allergyseverity2"/>
-                                            </text>
                                             <statusCode code="completed"/>
                                             <value xsi:type="CD" code="255604002" displayName="Mild"
                                                 codeSystem="2.16.840.1.113883.6.96"
@@ -1827,7 +1872,7 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                             <item>Problem #2<list>
                                     <item>Chest pain (onset Apr 14, 2007) [authored Apr 14,
                                         2007]</item>
-                                    <item>First Diagnosed February 2005</item>
+                                    <item><content ID=ProblemObs_1_PS1>First Diagnosed February 2005</content></item>
                                     <item>Angina (onset Apr 17, 2007) [authored Apr 17, 2007]</item>
                                 </list>
                             </item>
@@ -1923,16 +1968,10 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                                     <id root="093A5380-00CE-11E6-B4C5-0050568B000B" extension="1.1"/>
                                     <code code="55607006" codeSystem="2.16.840.1.113883.6.96"
                                         codeSystemName="SNOMED CT" displayName="Problem">
-                                        <originalText>
-                                            <reference value="#ProblemObs_1_PT1"/>
-                                        </originalText>
                                         <translation code="75326-9"
                                             codeSystem="2.16.840.1.113883.6.1"
                                             codeSystemName="LOINC" displayName="Problem"/>
                                     </code>
-                                    <text>
-                                        <reference value="#ProblemObs1"/>
-                                    </text>
                                     <statusCode code="completed"/>
                                     <effectiveTime>
                                         <low value="20140909"/>
@@ -3247,9 +3286,6 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                             <id root="bd4ef764-d7f8-4484-8f65-a776e30816d5"/>
                             <code code="6025007" displayName="Laparoscopic appendectomy"
                                 codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
-                                <originalText>
-                                    <reference value="#ProcedureDesc1"/>
-                                </originalText>
                                 <translation codeSystem="2.16.840.1.113883.6.12"
                                     codeSystemName="CPT" code="44970"
                                     displayName="Laparoscopic Appendectomy"/>
@@ -3260,9 +3296,6 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                                     codeSystemName="ICD-9-CM" code="47.01"
                                     displayName="Laparoscopic appendectomy"/>
                             </code>
-                            <text>
-                                <reference value="#Procedure1"/>
-                            </text>
                             <!-- statusCode is completed because the procedure is complete, even though NOT done -->
                             <!-- Systems may include statuCode in the narrative (section.text) - if they do it's 
 				             important to make clear procedure was NOT done -->
@@ -3448,47 +3481,47 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td ID="result1">Hemoglobin</td>
-                                    <td ID="resultvalue1">13.2 g/dL</td>
-                                    <td ID="referencerange1">Normal range for women is 12.0 to 15.5
+                                    <td>Hemoglobin</td>
+                                    <td>13.2 g/dL</td>
+                                    <td>Normal range for women is 12.0 to 15.5
                                         grams per deciliter</td>
                                     <td>Normal</td>
                                     <td>03/19/2008</td>
                                 </tr>
                                 <tr>
-                                    <td ID="result2">Leukocytes</td>
-                                    <td ID="resultvalue2">6.7 10*9/L</td>
-                                    <td ID="referencerange2">Normal white blood cell count range
+                                    <td>Leukocytes</td>
+                                    <td>6.7 10*9/L</td>
+                                    <td>Normal white blood cell count range
                                         3.5-10.5 billion cells/L</td>
                                     <td>Normal</td>
                                     <td>03/19/2008</td>
                                 </tr>
                                 <tr>
                                     <td ID="result3">Platelets</td>
-                                    <td ID="resultvalue3">123 10*9/L</td>
-                                    <td ID="referencerange3">Normal white blood cell count range
+                                    <td>123 10*9/L</td>
+                                    <td>Normal white blood cell count range
                                         3.5-10.5 billion cells/L</td>
                                     <td>Low</td>
                                     <td>03/19/2008</td>
                                 </tr>
                                 <tr>
                                     <td ID="result4">Hematocrit</td>
-                                    <td ID="resultvalue4">35.3 %</td>
-                                    <td ID="referencerange4">Normal hematocrit range for female:
+                                    <td>35.3 %</td>
+                                    <td>Normal hematocrit range for female:
                                         34.9-44.5 percent</td>
                                     <td>Normal</td>
                                     <td>03/19/2008</td>
                                 </tr>
                                 <tr>
-                                    <td ID="result5">Erythrocytes</td>
-                                    <td ID="resultvalue5">4.21 10*12/L</td>
-                                    <td ID="referencerange5">Normal red blood cell count range
+                                    <td>Erythrocytes</td>
+                                    <td>4.21 10*12/L</td>
+                                    <td>Normal red blood cell count range
                                         3.90-5.03 trillion cells/L</td>
                                     <td>Normal</td>
                                     <td>03/19/2008</td>
                                 </tr>
                                 <tr>
-                                    <td ID="result6">Urea nitrogen, Serum</td>
+                                    <td>Urea nitrogen, Serum</td>
                                     <td>Pending</td>
                                     <td>Pending</td>
                                     <td>Pending</td>
