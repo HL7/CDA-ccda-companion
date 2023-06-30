@@ -1,15 +1,13 @@
-This package is provided to review and comment on the "Sex observation Template" (template ID 2.16.840.1.113883.10.20.22.4.507) in the C-CDA Companion guide Release 4.1 STU Update.
-This is a focused STU Update on the "Sex observation Template" (template ID 2.16.840.1.113883.10.20.22.4.507).
-Comments made on other items will be considered for future iterations.
+This STU Update added the "Sex observation Template" (template ID 2.16.840.1.113883.10.20.22.4.507).
 
 Publication title:                               HL7 CDA® R2 IG: C-CDA Templates for Clinical Notes STU Companion Guide, Release 4.1 - US Realm
-Edition:                                         Release 4 STU 1, STU Update 1 (CMG, is this correct??)
+Edition:                                         Release 4 STU 1, STU Update 1
 Realm:                                           US Realm
 Release status:                                  Standard for Trial Use (STU)
 JIRA Specification key:                          ccda-two-one-companion
 Version:                                         4.1.1
 Errata identifier:                               
-Publication date:                                June 25, 2023
+Publication date:                                June 28, 2023
 Prepared by:                                     Structured Documents Work Group, the Federal Electronic Health Record Modernization (FEHRM) Program Office, and the US Realm Program Management Office
 
 
