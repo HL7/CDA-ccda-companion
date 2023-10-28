@@ -1630,7 +1630,7 @@ Schematron generated from Trifolia on 6/30/2023
       <sch:assert id="a-4537-8898" test="@classCode='ACT'">SHALL contain exactly one [1..1] @classCode="ACT" Act (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:4537-8898).</sch:assert>
       <sch:assert id="a-4537-8899" test="@moodCode='EVN'">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:4537-8899).</sch:assert>
       <sch:assert id="a-4537-8901" test="count(cda:id) &gt; 0">SHALL contain at least one [1..*] id (CONF:4537-8901).</sch:assert>
-      <sch:assert id="a-4537-32852" test="cda:code[count(cda:translation[@code]) &gt; 0]">This code SHALL contain at least one [1..*] translation (CONF:4537-32852) such that it SHOULD contain zero or one [0..1] @code, which SHOULD be selected from ValueSet Payer urn:oid:2.16.840.1.114222.4.11.3591 DYNAMIC (CONF:4537-33066).</sch:assert>
+      <sch:assert id="a-4537-32852" test="cda:code[count(cda:translation) &gt; 0]">This code SHALL contain at least one [1..*] translation (CONF:4537-32852) such that it SHOULD contain zero or one [0..1] @code, which SHOULD be selected from ValueSet Payer urn:oid:2.16.840.1.114222.4.11.3591 DYNAMIC (CONF:4537-33066).</sch:assert>
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.61-2023-05-01-errors" context="cda:act[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.61' and @extension='2023-05-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.22.4.61-2023-05-01-errors-abstract" />
